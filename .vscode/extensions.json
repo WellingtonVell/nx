@@ -1,8 +1,14 @@
 {
   "recommendations": [
+    // NX Console
     "nrwl.angular-console",
+    // Prettier
     "esbenp.prettier-vscode",
+    // ESLint
     "dbaeumer.vscode-eslint",
-    "ms-playwright.playwright"
+    // Playwright
+    "ms-playwright.playwright",
+    // Editor config
+    "EditorConfig.EditorConfig"
   ]
 }

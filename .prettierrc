@@ -1,3 +1,26 @@
 {
-  "singleQuote": true
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "tailwindStylesheet": "./apps/web/src/styles.css",
+  "tailwindFunctions": ["cva", "cn", "clsx"],
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrder": [
+    "^react(.*)$",
+    "<BUILTIN_MODULES>",
+    "@/(.*)$",
+    "^@\\w+([-/].*)?$",
+    "<TYPES>",
+    "^[./]",
+    "^[../]"
+  ]
 }

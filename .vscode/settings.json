@@ -1,0 +1,30 @@
+{
+  "prettier.enable": true,
+  "eslint.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.stylelint": "always",
+    "source.removeUnusedImports": "always"
+  },
+  "nxConsole.generateAiAgentRules": true,
+  // Opens .md files in VSCode's markdown previewer
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor",
+    "*.mdc": "vscode.markdown.preview.editor"
+  },
+  "tailwindCSS.experimental.configFile": "apps/web/src/styles.css",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
