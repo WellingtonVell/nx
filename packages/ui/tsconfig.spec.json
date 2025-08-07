@@ -7,33 +7,25 @@
       "vitest/importMeta",
       "vite/client",
       "node",
-      "vitest",
-      "@nx/react/typings/cssmodule.d.ts",
-      "@nx/react/typings/image.d.ts"
+      "vitest"
     ],
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "jsx": "react-jsx"
   },
   "include": [
     "vite.config.ts",
     "src/**/*.test.ts",
+    "src/**/*.spec.ts",
     "src/**/*.test.tsx",
+    "src/**/*.spec.tsx",
     "src/**/*.test.js",
+    "src/**/*.spec.js",
     "src/**/*.test.jsx",
+    "src/**/*.spec.jsx",
     "src/**/*.d.ts"
-  ],
-  "exclude": [
-    "out-tsc",
-    "test-output",
-    "eslint.config.mjs",
-    "playwright.config.ts"
   ],
   "references": [
     {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.lib.json"
     }
   ]
 }

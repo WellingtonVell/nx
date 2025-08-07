@@ -1,10 +1,44 @@
 import { Link, Route, Routes } from 'react-router-dom';
 import NxWelcome from '@/components/nx-welcome';
+import { Button } from '@packages/ui/components/button';
+import { Card } from '@packages/ui/components/card';
+import { Input } from '@packages/ui/components/input';
 
 export function App() {
   return (
-    <div>
+    <div className='p-6'>
       <NxWelcome title='@nx/web' />
+
+      {/* Shared Components Demo */}
+      <div className='mt-8 space-y-6'>
+        <h2 className='text-2xl font-bold'>Shared Components Demo</h2>
+
+        <Card className='max-w-md'>
+          <h3 className='mb-4 text-lg font-semibold'>Button Examples</h3>
+          <div className='space-x-2'>
+            <Button>Primary</Button>
+            <Button variant='secondary'>Secondary</Button>
+            <Button variant='outline'>Outline</Button>
+          </div>
+        </Card>
+
+        <Card className='max-w-md'>
+          <h3 className='mb-4 text-lg font-semibold'>Input Example</h3>
+          <Input
+            placeholder='Enter your name'
+            className='mb-2'
+          />
+          <Input
+            type='email'
+            placeholder='Enter your email'
+            className='mb-2'
+          />
+          <Input
+            type='password'
+            placeholder='Enter your password'
+          />
+        </Card>
+      </div>
 
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}

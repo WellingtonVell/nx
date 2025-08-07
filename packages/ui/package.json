@@ -1,0 +1,29 @@
+{
+  "name": "@packages/ui",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "./components/*": {
+      "development": "./src/components/*.tsx",
+      "types": "./dist/components/*.d.ts",
+      "import": "./dist/components/*.js",
+      "default": "./dist/components/*.js"
+    },
+    "./lib/*": {
+      "development": "./src/lib/*.ts",
+      "types": "./dist/lib/*.d.ts",
+      "import": "./dist/lib/*.js",
+      "default": "./dist/lib/*.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  }
+}
