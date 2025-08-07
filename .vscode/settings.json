@@ -14,6 +14,11 @@
     "*.md": "vscode.markdown.preview.editor",
     "*.mdc": "vscode.markdown.preview.editor"
   },
+  // Nest unit test files under the implementation files
+  "explorer.fileNesting.patterns": {
+    "*.ts": "$(capture).ts, $(capture).test.ts",
+    "*.tsx": "$(capture).tsx, $(capture).test.tsx"
+  },
   "tailwindCSS.experimental.configFile": "apps/web/src/styles.css",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

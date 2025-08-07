@@ -6,16 +6,13 @@ export default [
   ...nx.configs['flat/react'],
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
-    rules: {},
-    overrides: [
-      {
-        files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
-        rules: {
-          '@nx/enforce-module-boundaries': {
-            allow: ['@packages/ui'],
-          },
+    rules: {
+      '@nx/enforce-module-boundaries': [
+        'error',
+        {
+          allow: ['@packages/ui'],
         },
-      },
-    ],
+      ],
+    },
   },
 ];
