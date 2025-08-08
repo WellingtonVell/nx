@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import NxWelcome from '@/components/nx-welcome';
 import { Button } from '@packages/ui/components/button';
@@ -5,10 +6,19 @@ import { Card } from '@packages/ui/components/card';
 import { Input } from '@packages/ui/components/input';
 
 export function App() {
+  const [data, setData] = React.useState('');
+  React.useEffect(() => {
+    // Remove custom headers to avoid triggering CORS preflight
+    fetch('http://localhost:3000/api')
+      .then(response => response.text())
+      .then(data => setData(data));
+  }, []);
+
   return (
     <div className='p-6'>
+      {data}
+      <br />
       <NxWelcome title='@nx/web' />
-
       {/* Shared Components Demo */}
       <div className='mt-8 space-y-6'>
         <h2 className='text-2xl font-bold'>Shared Components Demo</h2>
@@ -39,7 +49,6 @@ export function App() {
           />
         </Card>
       </div>
-
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}

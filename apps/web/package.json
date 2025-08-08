@@ -1,5 +1,5 @@
 {
-  "name": "@nx/web",
+  "name": "@apps/web",
   "version": "0.0.1",
   "private": true,
   "type": "module",
