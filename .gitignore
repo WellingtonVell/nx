@@ -4,6 +4,8 @@ tmp
 out-tsc
 test-output
 .nx
+ios
+android
 
 # dependencies
 node_modules
