@@ -4,6 +4,10 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "ms-playwright.playwright",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "golang.go",
+    "github.vscode-github-actions",
+    "ms-playwright.playwright",
+    "bradlc.vscode-tailwindcss"
   ]
 }

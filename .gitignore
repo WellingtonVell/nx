@@ -1,11 +1,10 @@
 # outputs
 dist
-tmp
-out-tsc
-test-output
 .nx
 ios
 android
+coverage
+output
 
 # dependencies
 node_modules

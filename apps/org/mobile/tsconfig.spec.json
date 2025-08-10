@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "output/playwright",
+    "sourceMap": false
+  },
+  "include": [
+    "playwright.config.ts",
+    "src/__e2e__/*.spec.ts",
+    "src/__e2e__/*.spec.tsx"
+  ],
+  "exclude": [
+    "output",
+    "coverage",
+    "dist",
+    "eslint.config.mjs",
+    "vite.config.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}

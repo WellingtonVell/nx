@@ -17,9 +17,10 @@
   // Nest unit test files under the implementation files
   "explorer.fileNesting.patterns": {
     "*.ts": "$(capture).ts, $(capture).test.ts",
-    "*.tsx": "$(capture).tsx, $(capture).test.tsx"
+    "*.tsx": "$(capture).tsx, $(capture).test.tsx",
+    "*.go": "$(capture).go, $(capture).test.go"
   },
-  "tailwindCSS.experimental.configFile": "apps/web/src/styles.css",
+  "tailwindCSS.experimental.configFile": "apps/org/web/src/styles.css",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -31,5 +32,8 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
   }
 }

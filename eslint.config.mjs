@@ -7,10 +7,11 @@ export default [
   {
     ignores: [
       '**/dist',
+      '**/output',
+      '**/coverage',
+      '**/node_modules',
       '**/vite.config.*.timestamp*',
       '**/vitest.config.*.timestamp*',
-      '**/test-output',
-      '**/out-tsc',
     ],
   },
   {
